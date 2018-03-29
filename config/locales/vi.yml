@@ -1,0 +1,6 @@
+vi:
+  rails_sample: "App Mẫu"
+  pages:
+    home: 
+      sample_app: " Ưng dụng mới "
+      home_welcome: "Đây là trang chủ của"
