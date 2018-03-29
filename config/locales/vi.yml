@@ -1,6 +1,16 @@
 vi:
   rails_sample: "App Mẫu"
+  sample_app: " Ứng dụng mẫu"
+  home: "Trang chủ"
+  help: "Hỗ trợ"
+  login: "Đăng nhập"
+  news: "Thông tin"
+  contact: "Liên hệ"
   pages:
     home: 
-      sample_app: " Ưng dụng mới "
+      sample_app: " Ứng dụng mẫu"
       home_welcome: "Đây là trang chủ của"
+      signup_now: "Đăng kí ngay!"
+  users:
+    new:
+      signup: "Đăng kí"
