@@ -1,6 +1,16 @@
 en:
   rails_sample: "Rails Sample"
+  sample_app: "Sample App"
+  home: "Home"
+  help: "Help"
+  login: "Login"
+  news: "News"
+  contact: "Contact"
   pages:
     home: 
       sample_app: "Sample App"
       home_welcome: "This is the home page for the"
+      signup_now: "Sign up now!"
+  users:
+    new:
+      signup: "Sign Up"
