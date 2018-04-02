@@ -14,3 +14,15 @@ vi:
   users:
     new:
       signup: "Đăng kí"
+      name: "Tên"
+      password: "Mật khẩu"
+      confirmation: "Xác nhận mật khẩu"
+      create_account: "Tạo tài khoản"
+    create:
+      success: "Tạo tài khoản thành công"
+    show:
+      error: "Không tìm thấy tài khoản"
+  shared:
+    error_messages:
+      form_contain: "Form bao gồm"
+      error: "lỗi"
