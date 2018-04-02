@@ -10,7 +10,19 @@ en:
     home: 
       sample_app: "Sample App"
       home_welcome: "This is the home page for the"
-      signup_now: "Sign up now!"
+      signup_now: "Sign up!"
   users:
     new:
       signup: "Sign Up"
+      name: "Name"
+      password: "Password"
+      confirmation: "Confirmation"
+      create_account: "Create my account"
+    create:
+      success: "Welcome to the Sample App!"
+    show: 
+      error: "Can't find user"
+  shared:
+    error_messages:
+      form_contain: "The form contain "
+      error: "error"

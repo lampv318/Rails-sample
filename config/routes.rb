@@ -3,5 +3,7 @@ Rails.application.routes.draw do
     root "pages#home"
     #get "/*page" => "pages#show"
     get "/signup", to: "users#new"
+    post "/signup", to: "users#create"
+    resources :users
   end
 end
