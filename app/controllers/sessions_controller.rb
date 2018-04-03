@@ -3,8 +3,8 @@ class SessionsController < ApplicationController
   end
 
   def create
-    user = User.find_by email: params[:session][:email].downcase
-    if user && user.authenticate(params[:session][:password])
+    user = User.find_by email: sign_in_params[:email]
+    if user && user.authenticate(sign_in_params[:password])
       log_in user
       redirect_to user
     else
@@ -16,5 +16,13 @@ class SessionsController < ApplicationController
   def destroy
     log_out
     redirect_to root_url
+  end
+
+  private
+
+  attr_accessor :user
+
+  def sign_in_params
+    params.require(:user).permit(:email, :password)
   end
 end

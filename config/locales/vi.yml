@@ -18,6 +18,11 @@ vi:
       contact: "Liên hệ"
   pages:
     home: 
+      wellcome: <h1>Login &amp; Register Forms</h1>
+      login_title: <h3>Đăng nhập với chúng tôi</h3>
+      login_tut: <p>Mời nhập email và mật khẩu để đăng nhập</p> 
+      signup_title: <h3>Sign up now </h3>
+      signup_tut: <p>Mời điền vào mẫu bên dưới để đăng nhập</p>
       home: "Trang chủ"
       sample_app: " Ứng dụng mẫu"
       home_welcome: "Đây là trang chủ của"
