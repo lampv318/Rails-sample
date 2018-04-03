@@ -1,13 +1,24 @@
 vi:
   rails_sample: "App Mẫu"
   sample_app: " Ứng dụng mẫu"
-  home: "Trang chủ"
-  help: "Hỗ trợ"
-  login: "Đăng nhập"
-  news: "Thông tin"
-  contact: "Liên hệ"
+  layouts:
+    application:
+      tilte: "App Mẫu"
+    header:
+      home: "Trang chủ"
+      help: "Hỗ trợ"
+      login: "Đăng nhập"
+      logout: "Đăng xuất"
+      profile: "Thông tin"
+      setting: "Thiết lập"
+      user: "Người dùng"
+      account: "Tài khoản"
+    footer:
+      news: "Thông tin"
+      contact: "Liên hệ"
   pages:
     home: 
+      home: "Trang chủ"
       sample_app: " Ứng dụng mẫu"
       home_welcome: "Đây là trang chủ của"
       signup_now: "Đăng kí ngay!"
@@ -26,3 +37,11 @@ vi:
     error_messages:
       form_contain: "Form bao gồm"
       error: "lỗi"
+  sessions:
+    new:
+      login: "Đăng nhập"
+      password: "Mật khẩu"
+      new_user: "Bạn chưa có tài khoản"
+      signup_now: "Đăng kí ngay!"
+    create:
+      error: "Email hoặc tài khoản không đúng"

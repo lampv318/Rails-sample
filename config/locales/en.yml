@@ -1,13 +1,24 @@
 en:
   rails_sample: "Rails Sample"
   sample_app: "Sample App"
-  home: "Home"
-  help: "Help"
-  login: "Login"
-  news: "News"
-  contact: "Contact"
+  layouts:
+    application: 
+      title: "Rails Sample"
+    header: 
+      home: "Home"
+      help: "Help"
+      login: "Login"
+      logout: "Log out"
+      profile: "Profile"
+      setting: "Setting"
+      user: "Users"
+      account: "Account"
+    footer:
+      news: "News"
+      contact: "Contact"
   pages:
     home: 
+      home: "Home"
       sample_app: "Sample App"
       home_welcome: "This is the home page for the"
       signup_now: "Sign up!"
@@ -26,3 +37,11 @@ en:
     error_messages:
       form_contain: "The form contain "
       error: "error"
+  sessions:
+    new:
+      login: "Log in"
+      password: "Password"
+      new_user: "New user?"
+      signup_now: "Sign up now !"
+    create:
+      error: "Invalid email/password combination"
