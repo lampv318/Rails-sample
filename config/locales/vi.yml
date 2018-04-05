@@ -1,6 +1,7 @@
 vi:
   rails_sample: "App Mẫu"
   sample_app: " Ứng dụng mẫu"
+  please_login: "Xin mời đăng nhập để tiếp tục"
   layouts:
     application:
       tilte: "App Mẫu"
@@ -18,10 +19,10 @@ vi:
       contact: "Liên hệ"
   pages:
     home: 
-      wellcome: <h1>Login &amp; Register Forms</h1>
+      wellcome: <h1>Đăng kí &amp; Đăng nhập </h1>
       login_title: <h3>Đăng nhập với chúng tôi</h3>
       login_tut: <p>Mời nhập email và mật khẩu để đăng nhập</p> 
-      signup_title: <h3>Sign up now </h3>
+      signup_title: <h3>Đăng kí ngay </h3>
       signup_tut: <p>Mời điền vào mẫu bên dưới để đăng nhập</p>
       home: "Trang chủ"
       sample_app: " Ứng dụng mẫu"
@@ -50,3 +51,15 @@ vi:
       signup_now: "Đăng kí ngay!"
     create:
       error: "Email hoặc tài khoản không đúng"
+  posts:
+    new:
+      content: "Nội dung"
+      images: "Ảnh"
+      title: "Cập nhật trạng thái"
+      add_image: "Thêm ảnh"
+      create: "Cập nhật trạng thái"
+    image_fields:
+      remove_image: "Xóa ảnh"
+    create:
+      success: "Cập nhật trạng thái thành công"
+      fail: "Lỗi! Cập nhật trạng thái không thành công"
