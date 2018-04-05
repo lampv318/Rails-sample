@@ -1,10 +1,13 @@
 class UsersController < ApplicationController
-  def show
-    @user = User.find_by id: params[:id]
+  before_action :check_logged_in, except: [:new, :show, :create]
+  before_action :find_user, except: [:new, :index, :create]
+  before_action :correct_user, only: [:edit, :update]
 
-    return if @user
-    flash[:danger] = t ".error"
-    redirect_to root_path
+  def index
+    @users = User.paginate page: params[:page], per_page: 10
+  end
+
+  def show
   end
 
   def new
@@ -22,11 +25,42 @@ class UsersController < ApplicationController
     end
   end
 
+  def edit
+  end
+
+  def update
+    if @user.update_attributes user_params
+      flash[:success] = t ".updated"
+      redirect_to @user
+    else
+      render :edit
+    end
+  end
+
+  def destroy
+    if @user.destroy
+      flash[:success] = t ".destroy"
+      redirect_to users_url
+    end
+    authorize! :destroy, @user
+  end
+
   private
 
   def user_params
-    params.require(:user).permit :name, :email, :password,
+    params.require(:user).permit :name, :email, :password, 
       :password_confirmation
   end
 
+  def correct_user
+    redirect_to root_url unless current_user.correct_user? @user
+  end
+
+  def find_user
+    @user = User.find_by id: params[:id]
+    if @user.nil?
+      flash[:danger] = t "users.show.error"
+      redirect_to root_url
+    end
+  end
 end
