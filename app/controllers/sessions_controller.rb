@@ -23,6 +23,6 @@ class SessionsController < ApplicationController
   attr_accessor :user
 
   def sign_in_params
-    params.require(:user).permit(:email, :password)
+    params.require(:user).permit :email, :password
   end
 end
