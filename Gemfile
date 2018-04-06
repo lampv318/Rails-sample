@@ -29,6 +29,8 @@ gem "will_paginate", "3.1.6"
 gem "bootstrap-will_paginate", "1.0.0"
 gem "faker", "1.7.3"
 gem "cancancan", "~> 2.0"
+gem "pry"
+gem "kaminari"
 
 group :development, :test do
   # Call "byebug" anywhere in the code to stop execution and get a debugger console
@@ -36,6 +38,7 @@ group :development, :test do
   # Adds support for Capybara system testing and selenium driver
   gem "capybara", "~> 2.13"
   gem "selenium-webdriver"
+  gem "better_errors"
 end
 
 group :development do

@@ -1,0 +1,11 @@
+<% @user ||= current_user %>
+<div class="stats">
+  <%= form_tag get_follow_path do %>
+    <%= hidden_field_tag :check_follow_id, '1' %>
+    <%= submit_tag t("shared.stats.following") %>
+  <% end %>
+  <%= form_tag get_follow_path do %>
+    <%= hidden_field_tag :check_follow_id, '2' %>
+    <%= submit_tag t("shared.stats.followers") %>
+  <% end %>
+</div>

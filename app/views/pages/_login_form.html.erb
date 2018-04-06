@@ -1,0 +1,97 @@
+<div class="top-content">
+    <div class="inner-bg">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-sm-8 col-sm-offset-2 text">
+          <%= raw t(".wellcome") %>
+            <div class="description">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-5">
+
+            <div class="form-box">
+              <div class="form-top">
+                <div class="form-top-left">
+                  <%= raw t(".login_title") %>
+                  <%= raw t(".login_tut") %>
+                </div>
+                <div class="form-top-right">
+                  <i class="fa fa-key"></i>
+                </div>
+              </div>
+              <div class="form-bottom">
+                <%= form_for :user , url: login_path do |f| %>
+                  <div class="form-group">
+                    <%= f.label :email, class: "sr-only" %>
+                    <%= f.text_field :email, placeholder: "Email", class: "form-email form-control" %>
+                  </div>
+                  <div class="form-group">
+                    <%= f.label :password, class: "sr-only" %>
+                    <%= f.password_field :password, placeholder: t("users.new.password"), class: "form-password form-control" %>
+                  </div>
+                  <div class="actions btn">
+                    <%= f.submit t("sessions.new.login") %>
+                  </div>
+                <% end %>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-1 middle-border"></div>
+          <div class="col-sm-1"></div>
+
+          <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+
+              <div class="form-box">
+                <div class="form-top">
+                  <div class="form-top-left">
+                    <%= raw t(".signup_title") %>
+                    <%= raw t(".signup_tut") %>
+                  </div>
+                  <div class="form-top-right">
+                    <i class="fa fa-pencil"></i>
+                  </div>
+                </div>
+                <div class="form-bottom">
+                  <%= form_for :user, url: signup_path do |f| %>
+                    <div class="form-group">
+                      <%= f.label :name, class: "sr-only" %>
+                      <%= f.text_field :name, placeholder: t("users.new.name") , class: "form-control" %>
+                    </div>
+                    
+                    <div class="form-group">
+                      <%= f.label :email, class: "sr-only"%>
+                      <%= f.text_field :email, placeholder: "Email", class: "form-email form-control" %>
+                    </div>
+
+                    <div class="form-group">
+                      <%= f.label :password, class: "sr-only" %>
+                      <%= f.password_field :password, placeholder: t("users.new.password"), class: "form-password form-control" %>
+                    </div>
+
+                    <div class="form-group">
+                      <%= f.label :password_confirmation, class: "sr-only" %>
+                      <%= f.password_field :password_confirmation, placeholder: t("users.new.confirmation"), class: "form-password form-control" %>
+                    </div>
+                    
+
+                    <div class="actions btn">
+                      <%= f.submit t("users.new.create_account") %>
+                    </div>
+                  <% end %>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>

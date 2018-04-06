@@ -19,12 +19,14 @@ vi:
       contact: "Liên hệ"
   pages:
     home: 
+      post_feed: "Post Feed"
+      home: "Trang chủ"
+    login_form:
       wellcome: <h1>Đăng kí &amp; Đăng nhập </h1>
       login_title: <h3>Đăng nhập với chúng tôi</h3>
       login_tut: <p>Mời nhập email và mật khẩu để đăng nhập</p> 
       signup_title: <h3>Đăng kí ngay </h3>
       signup_tut: <p>Mời điền vào mẫu bên dưới để đăng nhập</p>
-      home: "Trang chủ"
       sample_app: " Ứng dụng mẫu"
       home_welcome: "Đây là trang chủ của"
       signup_now: "Đăng kí ngay!"
@@ -40,6 +42,7 @@ vi:
     create:
       success: "Tạo tài khoản thành công"
     show:
+      posts: "Bài viết"
       error: "Không tìm thấy tài khoản"
     update:
       updated: "Cập nhật thành công"
@@ -52,10 +55,19 @@ vi:
     user:
       delete: "Xóa"
       sure: "Bạn chắc"
+    follow:
+      follow: "Theo dõi"
+    unfollow: 
+      unfollow: "Bỏ theo dõi"
   shared:
     error_messages:
       form_contain: "Form bao gồm"
       error: "lỗi"
+    stats:
+      following: "Đang theo dõi"
+      followers: "Người theo dõi"
+    user_info:
+      view_profile: "Xem thông tin"
   sessions:
     new:
       login: "Đăng nhập"
@@ -65,6 +77,8 @@ vi:
     create:
       error: "Email hoặc tài khoản không đúng"
   posts:
+    post_form:
+      content: "Compose new post ..."
     post:
       posted: " Được đăng khoảng"
       ago: "Trước"

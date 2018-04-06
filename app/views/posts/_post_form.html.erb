@@ -1,0 +1,16 @@
+<%= form_for @post, url: user_posts_path(current_user) do |f| %>
+  <div class="field">
+    <!-- <%= f.label :content , t(".content")%> -->
+    <%= f.text_area :content , placeholder:  t(".content")%>
+  </div>
+  <ul>
+    <h2><%= t(".images") %></h2>
+    
+    <div class="links">
+      <%= link_to_add_association t(".add_image"), f, :images, partial: "posts/image_fields"%>
+    </div>
+  </ul>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

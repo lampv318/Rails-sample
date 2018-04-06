@@ -1,9 +1,10 @@
 class SessionsController < ApplicationController
+  before_action :find_by_email, only: [:create]
+  
   def new
   end
 
   def create
-    user = User.find_by email: sign_in_params[:email]
     if user && user.authenticate(sign_in_params[:password])
       log_in user
       redirect_to user
@@ -24,5 +25,13 @@ class SessionsController < ApplicationController
 
   def sign_in_params
     params.require(:user).permit :email, :password
+  end
+
+  def find_by_email
+    @user = User.find_by email: sign_in_params[:email]
+    if user.nil?
+      flash[:danger] = t "users.show.error"
+      redirect_to root_url
+    end
   end
 end
