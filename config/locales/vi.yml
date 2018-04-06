@@ -29,6 +29,8 @@ vi:
       home_welcome: "Đây là trang chủ của"
       signup_now: "Đăng kí ngay!"
   users:
+    index: 
+      all_user: "Tất cả người dùng"
     new:
       signup: "Đăng kí"
       name: "Tên"
@@ -39,6 +41,17 @@ vi:
       success: "Tạo tài khoản thành công"
     show:
       error: "Không tìm thấy tài khoản"
+    update:
+      updated: "Cập nhật thành công"
+    destroy:
+      destroy: "Đã xóa"
+    edit:
+      edit_user: "Chỉnh sửa thông tin"
+      save_change: "Lưu thay đổi"
+      change: "Thay đối"
+    user:
+      delete: "Xóa"
+      sure: "Bạn chắc"
   shared:
     error_messages:
       form_contain: "Form bao gồm"
@@ -52,6 +65,9 @@ vi:
     create:
       error: "Email hoặc tài khoản không đúng"
   posts:
+    post:
+      posted: " Được đăng khoảng"
+      ago: "Trước"
     new:
       content: "Nội dung"
       images: "Ảnh"
@@ -63,3 +79,42 @@ vi:
     create:
       success: "Cập nhật trạng thái thành công"
       fail: "Lỗi! Cập nhật trạng thái không thành công"
+  will_paginate:
+    previous_label: "&#8592; Trang sau"
+    next_label: "Trang tiếp &#8594;"
+  datetime:
+    distance_in_words:
+      about_x_hours:
+        one: khoảng 1 giờ
+        other: khoảng %{count} giờ
+      about_x_months:
+        one: khoảng 1 tháng
+        other: khoảng %{count} tháng
+      about_x_years:
+        one: khoảng 1 năm
+        other: khoảng %{count} năm
+      almost_x_years:
+        one: gần 1 năm
+        other: gần %{count} năm
+      half_a_minute: 30 giây
+      less_than_x_minutes:
+        one: chưa tới 1 phút
+        other: chưa tới %{count} phút
+      less_than_x_seconds:
+        one: chưa tới 1 giây
+        other: chưa tới %{count} giây
+      over_x_years:
+        one: hơn 1 năm
+        other: hơn %{count} năm
+      x_days:
+        one: 1 ngày
+        other: "%{count} ngày"
+      x_minutes:
+        one: 1 phút
+        other: "%{count} phút"
+      x_months:
+        one: 1 tháng
+        other: "%{count} tháng"
+      x_seconds:
+        one: 1 giây
+        other: "%{count} giây"

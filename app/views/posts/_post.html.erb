@@ -4,10 +4,11 @@
   <span class="content">
     <%= post.content %>
     <% post.images.each do |image| %>
-      <%= image_tag image.image_url %>
+      <%= image_tag image.link %>
     <% end %>
   </span>
   <span class="timestamp">
-    Posted <%= time_ago_in_words post.created_at %> ago.
+    <%= t(".posted") %> <%= time_ago_in_words post.created_at %> 
+      <%= t(".ago") %>
   </span>
 </li>
