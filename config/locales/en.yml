@@ -19,12 +19,14 @@ en:
       contact: "Contact"
   pages:
     home: 
+      post_feed: "Post Feed"
+      home: "Home"
+    login_form:
       wellcome: <h1>Login &amp; Register Forms</h1>
       login_title: <h3>Log in with us</h3>
       login_tut: <p>Enter email and password to log on:</p>
       signup_title: <h3>Sign up now</h3>
       signup_tut: <p>Fill in the form below to get instant access:</p>
-      home: "Home"
       sample_app: "Sample App"
       home_welcome: "This is the home page for the"
       signup_now: "Sign up!"
@@ -40,6 +42,7 @@ en:
     create:
       success: "Welcome to the Sample App!"
     show: 
+      posts: "Post"
       error: "Can't find user"
     update:
       updated: "Profile update"
@@ -52,10 +55,19 @@ en:
     user:
       delete: "delete"
       sure: "You sure"
+    follow:
+      follow: "Follow"
+    unfollow: 
+      unfollow: "Unfollow"
   shared:
     error_messages:
       form_contain: "The form contain "
       error: "error"
+    stats:
+      following: "following"
+      followers: "followers"
+    user_info:
+      view_profile: "View Profile"
   sessions:
     new:
       login: "Log in"
@@ -65,11 +77,13 @@ en:
     create:
       error: "Invalid email/password combination"
   posts:
+    post_form:
+      content: "Compose new post ..."
     post:
       posted: "Posted"
       ago: "Ago"
     new:
-      content: "Content"
+      content: "Compose new post ..."
       images: "Images"
       title: "Create new status"
       add_image: "Add image"
@@ -79,11 +93,12 @@ en:
     create:
       success: "Create status successfully"
       fail: "Create status failed"
-  will_paginate:
-    previous_label: "&#8592; Previous"
-    next_label: "Next &#8594;"
-    page_gap: "&hellip;"
-    datetime:
+  pagination:
+      first: "&laquo; First"
+      last: "Last &raquo;"
+      previous: "&lsaquo; Prev"
+      next: "Next &rsaquo;"
+      truncate: "&hellip;"
   distance_in_words:
     about_x_hours:
       one: khoảng 1 giờ
