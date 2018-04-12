@@ -26,6 +26,10 @@ class User < ApplicationRecord
     self == user
   end
 
+  def feed 
+    Post.search_post self.id
+  end
+
   def follow other_user
     following << other_user
   end
