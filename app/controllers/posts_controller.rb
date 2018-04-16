@@ -15,6 +15,7 @@ class PostsController < ApplicationController
       flash[:success] = t ".success"
       redirect_to user_path current_user
     else
+      @feed_items = []
       flash[:danger] = t "fail"
       render :new
     end
