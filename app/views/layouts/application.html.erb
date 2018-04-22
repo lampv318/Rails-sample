@@ -8,6 +8,11 @@
   </head>
   <body>
     <%= render "layouts/header"%>
+    <ul class= "users" , id="search_users">
+      <% if !@search_users.nil? %>
+        <%= render @search_users %>
+      <% end %>
+    </ul>
     <div class="container">
       <% flash.each do |message_type, message| %>
         <div class="alert alert-<%= message_type %>"><%= message %></div>

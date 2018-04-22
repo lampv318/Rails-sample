@@ -5,6 +5,8 @@ vi:
   layouts:
     application:
       tilte: "App Mẫu"
+    search_form:
+      search: "Tìm kiếm"
     header:
       home: "Trang chủ"
       help: "Hỗ trợ"
@@ -19,7 +21,7 @@ vi:
       contact: "Liên hệ"
   pages:
     home: 
-      post_feed: "Post Feed"
+      post_feed: "Trang chủ"
       home: "Trang chủ"
     login_form:
       wellcome: <h1>Đăng kí &amp; Đăng nhập </h1>
@@ -78,7 +80,10 @@ vi:
       error: "Email hoặc tài khoản không đúng"
   posts:
     post_form:
-      content: "Compose new post ..."
+      content: "Bạn đang nghĩ gì ...."
+      images: "Ảnh"
+      add_image: "thêm ảnh"
+      create_status: "Cập nhật trạng thái"
     post:
       posted: " Được đăng khoảng"
       ago: "Trước"

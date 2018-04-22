@@ -1,0 +1,5 @@
+<% if logged_in? %>
+  <%= form_tag(user_posts_path(current_user), :method => "get", id: "search-form", remote: true) do %>
+    <%= text_field_tag :search, params[:search], placeholder: t(".search") %>
+  <% end %>
+<% end %>

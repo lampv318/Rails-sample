@@ -23,6 +23,9 @@
         <% else %>
           <li><%= link_to t(".login"), login_path %></li>
         <% end %>
+        <li class="search_box">
+          <%= render "layouts/search_form"%>
+        </li>
       </ul>
     </nav>
   </div>
