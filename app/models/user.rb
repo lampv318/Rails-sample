@@ -41,4 +41,9 @@ class User < ApplicationRecord
   def following? other_user
     following.include? other_user
   end
+
+  def self.search keyword
+    where 'name LIKE ? ', "%#{keyword}%"
+  end
+
 end
